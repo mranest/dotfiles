@@ -1,0 +1,140 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <profiles>
+        <profile>
+            <id>internet</id>
+            <repositories>
+                <repository>
+                    <id>jboss</id>
+                    <name>JBoss Public</name>
+                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
+                </repository>
+                <!--
+                <repository>
+                    <id>oracle</id>
+                    <name>Oracle</name>
+                    <url>http://download.oracle.com/maven</url>
+                </repository>
+                <repository>
+                    <id>product-eap</id>
+                    <name>product-eap</name>
+                    <url>http://repository.jboss.org/nexus/service/local/repositories/product-eap-06_04_03/content</url>
+                </repository>
+                 -->
+            </repositories>
+            
+            <pluginRepositories>		
+                <pluginRepository>
+                    <id>jboss-plugins</id>
+                    <name>JBoss Public - Plugins</name>
+                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+        
+        <profile>
+            <id>fuse</id>
+            <repositories>
+                <repository>
+                    <id>fusesource-releases</id>
+                    <name>FuseSource Releases</name>
+                    <url>https://repository.jboss.org/nexus/content/repositories/fs-releases</url>
+                    <layout>default</layout>
+                </repository>
+            </repositories>
+            
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>fusesource-plugins</id>
+                    <name>FuseSource Releases - Plugins</name>
+                    <url>https://repository.jboss.org/nexus/content/repositories/fs-releases</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+        
+        <profile>
+            <id>eurobank</id>
+            <repositories>
+                <repository>
+                    <id>public</id>
+                    <name>Public</name>
+                    <url>http://192.168.159.30/nexus/content/groups/public</url>
+                </repository>
+                <repository>
+                    <id>releases</id>
+                    <name>Releases</name>
+                    <url>http://192.168.159.30/nexus/content/repositories/releases</url>
+                </repository>
+                <repository>
+                    <id>snapshots</id>
+                    <name>Snapshots</name>
+                    <url>http://192.168.159.30/nexus/content/repositories/snapshots</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>public-plugins</id>
+                    <name>Public - Plugins</name>
+                    <url>http://192.168.159.30/nexus/content/groups/public</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+        
+        <profile>
+            <id>eurobank-fuse</id>
+            <repositories>
+                <repository>
+                    <id>fuse</id>
+                    <name>Fuse</name>
+                    <url>http://192.168.159.30/nexus/content/groups/fuse</url>
+                </repository>
+            </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>fuse-plugins</id>
+                    <name>Fuse - Plugins</name>
+                    <url>http://192.168.159.30/nexus/content/groups/fuse</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>        
+    </profiles>
+
+    <servers>
+        <server>
+            <id>releases</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+        <server>
+            <id>thirdparty</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+        <server>
+            <id>snapshots</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+    </servers>
+
+    <!-- Comment out on internet profile
+    <mirrors>
+        <mirror>
+            <id>central-nexus</id>
+            <mirrorOf>central</mirrorOf>
+            <url>http://192.168.159.30/nexus/content/repositories/central</url>
+        </mirror>
+    </mirrors>
+     -->
+    <activeProfiles>
+        <activeProfile>internet</activeProfile>
+    </activeProfiles>
+</settings>

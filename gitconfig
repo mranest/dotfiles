@@ -1,0 +1,14 @@
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/mranest/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
+	trustExitCode = true
+[user]
+	name = Anestis Georgiadis
+	email = mranest@gmail.com
