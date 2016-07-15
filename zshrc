@@ -45,7 +45,7 @@ ZSH_THEME="mranest"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn)
+plugins=(git svn brew bbedit docker docker-compose gradle mvn npm osx python scala spring)
 
 # User configuration
 
@@ -97,3 +97,10 @@ HELPDIR=/usr/local/share/zsh/help
 
 # Brewed byobu
 export BYOBU_PREFIX=$(brew --prefix)
+
+# Postgres.app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+# Spark
+export PYSPARK_DRIVER_PYTHON=jupyter
+export PYSPARK_DRIVER_PYTHON_OPTS=notebook
