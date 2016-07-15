@@ -10,18 +10,6 @@
                     <name>JBoss Public</name>
                     <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
                 </repository>
-                <!--
-                <repository>
-                    <id>oracle</id>
-                    <name>Oracle</name>
-                    <url>http://download.oracle.com/maven</url>
-                </repository>
-                <repository>
-                    <id>product-eap</id>
-                    <name>product-eap</name>
-                    <url>http://repository.jboss.org/nexus/service/local/repositories/product-eap-06_04_03/content</url>
-                </repository>
-                 -->
             </repositories>
             
             <pluginRepositories>		
@@ -34,42 +22,22 @@
         </profile>
         
         <profile>
-            <id>fuse</id>
-            <repositories>
-                <repository>
-                    <id>fusesource-releases</id>
-                    <name>FuseSource Releases</name>
-                    <url>https://repository.jboss.org/nexus/content/repositories/fs-releases</url>
-                    <layout>default</layout>
-                </repository>
-            </repositories>
-            
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>fusesource-plugins</id>
-                    <name>FuseSource Releases - Plugins</name>
-                    <url>https://repository.jboss.org/nexus/content/repositories/fs-releases</url>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
-        
-        <profile>
             <id>eurobank</id>
             <repositories>
                 <repository>
                     <id>public</id>
                     <name>Public</name>
-                    <url>http://192.168.159.30/nexus/content/groups/public</url>
+                    <url>http://zuul/nexus/content/groups/public</url>
                 </repository>
                 <repository>
                     <id>releases</id>
                     <name>Releases</name>
-                    <url>http://192.168.159.30/nexus/content/repositories/releases</url>
+                    <url>http://zuul/nexus/content/repositories/releases</url>
                 </repository>
                 <repository>
                     <id>snapshots</id>
                     <name>Snapshots</name>
-                    <url>http://192.168.159.30/nexus/content/repositories/snapshots</url>
+                    <url>http://zuul/nexus/content/repositories/snapshots</url>
                     <releases>
                         <enabled>false</enabled>
                     </releases>
@@ -82,26 +50,7 @@
                 <pluginRepository>
                     <id>public-plugins</id>
                     <name>Public - Plugins</name>
-                    <url>http://192.168.159.30/nexus/content/groups/public</url>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
-        
-        <profile>
-            <id>eurobank-fuse</id>
-            <repositories>
-                <repository>
-                    <id>fuse</id>
-                    <name>Fuse</name>
-                    <url>http://192.168.159.30/nexus/content/groups/fuse</url>
-                </repository>
-            </repositories>
-
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>fuse-plugins</id>
-                    <name>Fuse - Plugins</name>
-                    <url>http://192.168.159.30/nexus/content/groups/fuse</url>
+                    <url>http://zuul/nexus/content/groups/public</url>
                 </pluginRepository>
             </pluginRepositories>
         </profile>        
