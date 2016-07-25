@@ -45,7 +45,7 @@ ZSH_THEME="mranest"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn brew bbedit docker docker-compose gradle mvn npm osx python scala spring)
+plugins=(git svn brew bbedit bower docker docker-compose encode64 gradle mvn npm osx python scala spring)
 
 # User configuration
 
@@ -80,12 +80,8 @@ JAVA_VERSION=1.8
 export JAVA_HOME=`/usr/libexec/java_home -v $JAVA_VERSION`
 alias java_home=/usr/libexec/java_home
 
-# Development tools
-export GROOVY_HOME="/usr/local/opt/groovy/libexec"
-export M2_HOME="/Users/mranest/opt/apache-maven"
-export SCALA_HOME="/Users/mranest/opt/scala-2.11"
-
-export PATH=~/bin:$M2_HOME/bin:$SCALA_HOME/bin:/usr/local/sbin:$PATH
+# Path
+export PATH=~/bin:/usr/local/sbin:$PATH
 
 # Brew
 export MANPATH="/usr/local/man:$MANPATH"
