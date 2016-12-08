@@ -81,7 +81,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v $JAVA_VERSION`
 alias java_home=/usr/libexec/java_home
 
 # Path
-export PATH=~/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 # Brew
 export MANPATH="/usr/local/man:$MANPATH"
