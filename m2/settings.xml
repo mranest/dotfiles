@@ -54,6 +54,23 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>        
+        <profile>
+            <id>fuse</id>
+            <repositories>
+                <repository>
+                    <id>fuse</id>
+                    <name>Fuse</name>
+                    <url>http://zuul/nexus/content/groups/fuse</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>fuse-plugins</id>
+                    <name>Fuse - Plugins</name>
+                    <url>http://zuul/nexus/content/groups/fuse</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>        
     </profiles>
 
     <servers>

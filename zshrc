@@ -97,6 +97,5 @@ export BYOBU_PREFIX=$(brew --prefix)
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-# Spark
-export PYSPARK_DRIVER_PYTHON=jupyter
-export PYSPARK_DRIVER_PYTHON_OPTS=notebook
+# Cask
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
