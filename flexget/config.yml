@@ -1,0 +1,44 @@
+tasks:
+  revolutiontt bookmarks:
+    notify:
+      task:
+        via:
+          - email:
+              from: mranest@gmail.com
+              to: mranest@gmail.com
+              smtp_host: smtp.gmail.com
+              smtp_port: 587
+              smtp_username: mranest
+              smtp_password: sfytvxguamkxqvut
+              smtp_tls: yes
+    rss: 
+      url: https://revolutiontt.me/rss.php?feed=dl&bookmarks=on&passkey=a2163fae42654759d3899eb6ae56a17c
+    download: ~/Downloads/torrents
+    accept_all: yes
+  revolutiontt movies:
+    notify:
+      task:
+        via:
+          - email:
+              from: mranest@gmail.com
+              to: mranest@gmail.com
+              smtp_host: smtp.gmail.com
+              smtp_port: 587
+              smtp_username: mranest
+              smtp_password: sfytvxguamkxqvut
+              smtp_tls: yes
+    rss:
+      url: https://revolutiontt.me/rss.php?feed=dl&cat=12&passkey=a2163fae42654759d3899eb6ae56a17c
+    download: ~/Downloads/torrents
+    imdb:
+      min_score: 6.9
+      min_votes: 4500
+      min_year: 2014
+    seen_movies: strict
+    quality: 720p hdrip+
+#  revolutiontt tv:
+#    rss:
+#      url: https://revolutiontt.me/rss.php?feed=dl&cat=41&passkey=a2163fae42654759d3899eb6ae56a17c
+#    download: ~/Downloads/torrents
+#    series_premiere:
+#      allow_seasonless: yes
