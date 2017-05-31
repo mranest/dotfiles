@@ -94,8 +94,3 @@ HELPDIR=/usr/local/share/zsh/help
 # Brewed byobu
 export BYOBU_PREFIX=$(brew --prefix)
 
-# Postgres.app
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-
-# Cask
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
