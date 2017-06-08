@@ -93,11 +93,3 @@ HELPDIR=/usr/local/share/zsh/help
 
 # Brewed byobu
 export BYOBU_PREFIX=$(brew --prefix)
-
-# Postgres.app
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-
-# Load pyenv automatically by appending
-# the following to ~/.zshrc:
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
