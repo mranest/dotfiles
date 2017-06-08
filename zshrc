@@ -97,5 +97,7 @@ export BYOBU_PREFIX=$(brew --prefix)
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-# Cask
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+# Load pyenv automatically by appending
+# the following to ~/.zshrc:
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
