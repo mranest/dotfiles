@@ -45,7 +45,7 @@ ZSH_THEME="mranest"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn brew bbedit bower docker docker-compose encode64 gradle mvn npm osx python scala spring)
+plugins=(git svn brew bbedit bower docker docker-compose encode64 gradle kubectl mvn npm osx python scala spring)
 
 # User configuration
 

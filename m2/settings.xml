@@ -3,25 +3,6 @@
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <profiles>
         <profile>
-            <id>jboss</id>
-            <repositories>
-                <repository>
-                    <id>jboss</id>
-                    <name>JBoss Public</name>
-                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
-                </repository>
-            </repositories>
-            
-            <pluginRepositories>		
-                <pluginRepository>
-                    <id>jboss-plugins</id>
-                    <name>JBoss Public - Plugins</name>
-                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
-        
-        <profile>
             <id>eurobank</id>
             <repositories>
                 <repository>
@@ -54,6 +35,26 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>        
+
+        <profile>
+            <id>jboss</id>
+            <repositories>
+                <repository>
+                    <id>jboss</id>
+                    <name>JBoss Public</name>
+                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
+                </repository>
+            </repositories>
+            
+            <pluginRepositories>		
+                <pluginRepository>
+                    <id>jboss-plugins</id>
+                    <name>JBoss Public - Plugins</name>
+                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+        
         <profile>
             <id>fuse</id>
             <repositories>
