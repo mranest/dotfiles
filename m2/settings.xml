@@ -34,7 +34,7 @@
                     <url>http://zuul/nexus/content/groups/public</url>
                 </pluginRepository>
             </pluginRepositories>
-        </profile>        
+        </profile>
 
         <profile>
             <id>jboss</id>
@@ -45,8 +45,8 @@
                     <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
                 </repository>
             </repositories>
-            
-            <pluginRepositories>		
+
+            <pluginRepositories>
                 <pluginRepository>
                     <id>jboss-plugins</id>
                     <name>JBoss Public - Plugins</name>
@@ -54,7 +54,7 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>
-        
+
         <profile>
             <id>fuse</id>
             <repositories>
@@ -71,24 +71,63 @@
                     <url>http://zuul/nexus/content/groups/fuse</url>
                 </pluginRepository>
             </pluginRepositories>
-        </profile>        
+        </profile>
+
+        <profile>
+            <id>oracle</id>
+            <repositories>
+                <repository>
+                    <id>maven.oracle.com</id>
+                    <url>https://maven.oracle.com</url>
+                    <layout>default</layout>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>maven.oracle.com</id>
+                    <url>https://maven.oracle.com</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
     </profiles>
 
     <servers>
         <server>
             <id>releases</id>
             <username>deployment</username>
-            <password>deployment123</password>
+            <password>{1XR8DIC+1iQH+Ml6u/Yd4VmJqbHbb6yUQ0BRjT7URG8=}</password>
         </server>
         <server>
             <id>thirdparty</id>
             <username>deployment</username>
-            <password>deployment123</password>
+            <password>{1XR8DIC+1iQH+Ml6u/Yd4VmJqbHbb6yUQ0BRjT7URG8=}</password>
         </server>
         <server>
             <id>snapshots</id>
             <username>deployment</username>
-            <password>deployment123</password>
+            <password>{1XR8DIC+1iQH+Ml6u/Yd4VmJqbHbb6yUQ0BRjT7URG8=}</password>
+        </server>
+        <server>
+            <id>maven.oracle.com</id>
+            <username>mranest@gmail.com</username>
+            <password>{VPGaHiL4GCgHkBzzvMTh+9hpscCYl+qNiyB8RLc0K3g=}</password>
+            <configuration>
+                <basicAuthScope>
+                    <host>ANY</host>
+                    <port>ANY</port>
+                    <realm>OAM 11g</realm>
+                </basicAuthScope>
+                <httpConfiguration>
+                    <all>
+                        <params>
+                            <property>
+                                <name>http.protocol.allow-circular-redirects</name>
+                                <value>%b,true</value>
+                            </property>
+                        </params>
+                    </all>
+                </httpConfiguration>
+            </configuration>
         </server>
     </servers>
 
