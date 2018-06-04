@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="mranest"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -80,9 +80,6 @@ JAVA_VERSION=1.8
 export JAVA_HOME=`/usr/libexec/java_home -v $JAVA_VERSION`
 alias java_home=/usr/libexec/java_home
 
-# Path
-export PATH=/usr/local/sbin:$PATH
-
 # Brew
 export MANPATH="/usr/local/man:$MANPATH"
 
@@ -93,3 +90,23 @@ HELPDIR=/usr/local/share/zsh/help
 
 # Brewed byobu
 export BYOBU_PREFIX=$(brew --prefix)
+
+# Headless Chrome
+alias chrome="~/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+# Google Cloud SDK
+source /Users/mranest/opt/google-cloud-sdk/completion.zsh.inc
+source /Users/mranest/opt/google-cloud-sdk/path.zsh.inc
+
+# sbin and user Python paths
+export PATH=/usr/local/sbin:$PATH:$HOME/Library/Python/3.6/bin:$HOME/Library/Python/2.7/bin
+
+# Locale
+export LANG=en_US.UTF-8
+
+# ESP-IDF
+export PATH=$PATH:~/opt/esp/xtensa-esp32-elf/bin
+export IDF_PATH=~/opt/esp/esp-idf
+
+# Anaconda
+export PATH=$PATH:/usr/local/anaconda3/bin
